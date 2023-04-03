@@ -1,4 +1,10 @@
 terraform {
+    cloud {
+    organization = "grinwis-com"
+    workspaces {
+      name = "dsa-common-include"
+    }
+  }
   required_providers {
     akamai = {
       source  = "akamai/akamai"

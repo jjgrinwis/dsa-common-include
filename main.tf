@@ -19,7 +19,7 @@ resource "akamai_property_include" "new_specific_rule_tree" {
     type = "COMMON_SETTINGS"
 }
 
-# let's activate on staging
+# let's activate on staging and ignoring any warnings
 resource "akamai_property_include_activation" "my_example" {
   include_id    = resource.akamai_property_include.new_specific_rule_tree.id
   contract_id   = data.akamai_contract.contract.id
