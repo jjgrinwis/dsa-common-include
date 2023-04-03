@@ -235,7 +235,7 @@ data "akamai_property_rules_builder" "incl2prop_rule_geolocation" {
     }
     behavior {
       edge_scape {
-        enabled = true
+        enabled = false
       }
     }
   }
