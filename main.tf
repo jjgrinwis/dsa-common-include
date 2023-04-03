@@ -26,6 +26,7 @@ resource "akamai_property_include_activation" "my_example" {
   group_id      = data.akamai_contract.contract.group_id
   network       = "STAGING"
   version       = resource.akamai_property_include.new_specific_rule_tree.latest_version
+  auto_acknowledge_rule_warnings = true
   notify_emails = [
     "notify@example.com"
   ]
